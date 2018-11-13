@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity"
+    >
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/StandardPadding"
+      android:textAlignment="center"
+      android:layout_margin="@dimen/standardMargin"
+      android:id="@+id/jname"
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAllCaps="false"
+      android:layout_gravity="center_horizontal"
+      android:text="Insert"
+      android:textColor="@android:color/white"
+      style="@style/myBorder"
+      android:id="@+id/insert"
+
+      />
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:id="@+id/todolist"
+      android:layout_margin="@dimen/standardMargin"
+      android:padding="@dimen/StandardPadding"
+      >
+
+  </android.support.v7.widget.RecyclerView>
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:id="@+id/completedlist"
+      android:layout_margin="@dimen/standardMargin"
+      android:padding="@dimen/StandardPadding"
+      >
+
+  </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
